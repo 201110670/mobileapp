@@ -372,7 +372,7 @@ div.ex{
 			<img src="css/images/header1.png" style="margin-left: auto; margin-right: auto; display: block;" height="100%"width="100%"/>
 		</div>
 <div data-role="content" data-theme="a" align="center">
-<img src="css/images/devs.png" height="100%" width="100%">
+
 </div>
  <div data-role="footer" data-position="fixed" data-theme="a" data-toggle="false">
 	<div data-role="navbar">
@@ -793,7 +793,7 @@ $(document).ready(function(){
 
 
 var getUser=window.localStorage.getItem("getUser");
-    $.post("http://gcccs.org/gccahs/studentmobile/phpfiles/sched.php",
+    $.post("phpfiles/sched.php",
     {
       student:getUser
     },
@@ -819,7 +819,7 @@ if(window.XMLHttpRequest){
 				document.getElementById("updates").innerHTML=xmlhttp.responseText;
 		}
 		}
-		xmlhttp.open("GET","http://gcccs.org/gccahs/studentmobile/phpfiles/updates.php", true);
+		xmlhttp.open("GET","phpfiles/updates.php", true);
 		xmlhttp.send();
 }
 
@@ -857,7 +857,7 @@ $(function(){
 	$('#login').click(function(){
 		$.mobile.loading('show');
 		$.ajax({
-			url:"http://gcccs.org/gccahs/studentmobile/phpfiles/login.php",
+			url:"phpfiles/login.php",
 			data:{
 				username:$('#username').val(),
 				password:$('#password').val()
@@ -879,7 +879,7 @@ $(function(){
 				var name;
 
 var getUser=window.localStorage.getItem("getUser");
-    $.post("http://gcccs.org/gccahs/studentmobile/phpfiles/name.php",
+    $.post("phpfiles/name.php",
     {
       student:getUser
     },
@@ -939,7 +939,7 @@ $("#fourth2").show();
 var show;
 
 var getUser=window.localStorage.getItem("getUser");
-    $.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view.php",
+    $.post("phpfiles/view.php",
     {
       student:getUser
     },
@@ -949,7 +949,7 @@ var getUser=window.localStorage.getItem("getUser");
 	
     });
 	//
-	$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_2.php",
+	$.post("phpfiles/view_2.php",
     {
       student:getUser
     },
@@ -959,7 +959,7 @@ var getUser=window.localStorage.getItem("getUser");
 		
     });
 	
-	$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_3.php",
+	$.post("phpfiles/view_3.php",
     {
       student:getUser
     },
@@ -969,7 +969,7 @@ var getUser=window.localStorage.getItem("getUser");
 
     });
 	
-	$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_4.php",
+	$.post("phpfiles/view_4.php",
     {
       student:getUser
     },
@@ -979,7 +979,7 @@ var getUser=window.localStorage.getItem("getUser");
 		
     });
 	
-	$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_5.php",
+	$.post("phpfiles/view_5.php",
     {
       student:getUser
     },
@@ -989,7 +989,7 @@ var getUser=window.localStorage.getItem("getUser");
 		
     });
 	
-	$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_6.php",
+	$.post("phpfiles/view_6.php",
     {
       student:getUser
     },
@@ -999,7 +999,7 @@ var getUser=window.localStorage.getItem("getUser");
 		
     });
 	
-	$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_7.php",
+	$.post("phpfiles/view_7.php",
     {
       student:getUser
     },
@@ -1009,7 +1009,7 @@ var getUser=window.localStorage.getItem("getUser");
 			
     });
 	
-	$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_8.php",
+	$.post("phpfiles/view_8.php",
     {
       student:getUser
     },
@@ -1049,7 +1049,7 @@ $('#loginparent').click(function(){
 
 	$.mobile.loading('show');
 		$.ajax({
-			url:"http://gcccs.org/gccahs/studentmobile/phpfiles/loginParent.php",
+			url:"phpfiles/loginParent.php",
 			data:{
 				username:$('#usernameparent').val(),
 				password:$('#passwordparent').val()
@@ -1078,7 +1078,7 @@ $('#loginparent').click(function(){
 	
 	$.mobile.loading('show');
 		$.ajax({
-			url:"http://gcccs.org/gccahs/studentmobile/phpfiles/loginstudent.php",
+			url:"phpfiles/loginstudent.php",
 			data:{
 				username:$('#username1').val(),
 				bdate:$('#bdate').val(),
@@ -1096,7 +1096,7 @@ $('#loginparent').click(function(){
 				window.localStorage.setItem("getUser",id);
 				
 				var getUser=window.localStorage.getItem("getUser");
-    $.post("http://gcccs.org/gccahs/studentmobile/phpfiles/name.php",
+    $.post("phpfiles/name.php",
     {
       student:getUser
     },
@@ -1157,7 +1157,7 @@ $("#fourth2").show();
 				
 				var show1;
 				var getUser=window.localStorage.getItem("getUser");
-				$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view.php",
+				$.post("phpfiles/view.php",
 				{
 				student:getUser
 				},
@@ -1166,7 +1166,7 @@ $("#fourth2").show();
 				document.getElementById("show1").innerHTML=show1;
 				});
 				
-				$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_2.php",
+				$.post("phpfiles/view_2.php",
 				{
 				student:getUser
 				},
@@ -1175,7 +1175,7 @@ $("#fourth2").show();
 				document.getElementById("show2").innerHTML=show1;
 				});
 				
-				$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_3.php",
+				$.post("phpfiles/view_3.php",
 				{
 				student:getUser
 				},
@@ -1184,7 +1184,7 @@ $("#fourth2").show();
 				document.getElementById("show3").innerHTML=show1;
 				});
 				
-				$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_4.php",
+				$.post("phpfiles/view_4.php",
 				{
 				student:getUser
 				},
@@ -1193,7 +1193,7 @@ $("#fourth2").show();
 				document.getElementById("show4").innerHTML=show1;
 				});
 				
-				$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_5.php",
+				$.post("phpfiles/view_5.php",
 				{
 				student:getUser
 				},
@@ -1202,7 +1202,7 @@ $("#fourth2").show();
 				document.getElementById("show5").innerHTML=show1;
 				});
 				
-				$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_6.php",
+				$.post("phpfiles/view_6.php",
 				{
 				student:getUser
 				},
@@ -1211,7 +1211,7 @@ $("#fourth2").show();
 				document.getElementById("show6").innerHTML=show1;
 				});
 				
-				$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_7.php",
+				$.post("phpfiles/view_7.php",
 				{
 				student:getUser
 				},
@@ -1220,7 +1220,7 @@ $("#fourth2").show();
 				document.getElementById("show7").innerHTML=show1;
 				});
 				
-				$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_8.php",
+				$.post("phpfiles/view_8.php",
 				{
 				student:getUser
 				},
@@ -1244,7 +1244,7 @@ $("#fourth2").show();
 	$("#studentschedule").click(function(){
 	var show2;
 	var getUser=window.localStorage.getItem("getUser");
-    $.post("http://gcccs.org/gccahs/studentmobile/phpfiles/sched.php",
+    $.post("phpfiles/sched.php",
     {
       student:getUser
     },
@@ -1258,7 +1258,7 @@ $("#fourth2").show();
 	$("#gotosched").click(function(){
 	var show2;
 	var getUser=window.localStorage.getItem("getUser");
-    $.post("http://gcccs.org/gccahs/studentmobile/phpfiles/sched.php",
+    $.post("phpfiles/sched.php",
     {
       student:getUser
     },
@@ -1297,7 +1297,7 @@ $("#fourth2").show();
 					$('.login-error').html('Please enter your Password.');
 				}else{
 					$.ajax({
-						url:"http://gcccs.org/gccahs/studentmobile/phpfiles/loginfaculty.php",
+						url:"phpfiles/loginfaculty.php",
 						data:{
 						username:$('#userfaculty').val(),
 						password:$('#passfaculty').val(),
@@ -1308,7 +1308,7 @@ $("#fourth2").show();
 								window.localStorage.setItem("facultyID",facultyID);
 								var getUserfaculty=window.localStorage.getItem("facultyID");
 								var show4;
-								$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/schedfaculty.php",
+								$.post("phpfiles/schedfaculty.php",
 									{
 									username:getUserfaculty
 									},
