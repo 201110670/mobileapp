@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile: Theme Download</title>
+	<link rel="stylesheet" href="css/mobiletheme.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.3.min.css" />
+	
+<style>
+
+div.ex{
+    width: 93%;
+    padding: 10px;
+    border: 5px solid gray;
+}#box1{
+
+    width: 93%;
+    padding: 10px;
+    border: 5px solid #1067aa;
+    margin: 0;
+	
+}
+#box{
+
+    width: 90%;
+    padding: 10px;
+    border: 5px solid #1067aa;
+    margin: 0px;
+	height:400px;
+	overflow-y: scroll;
+}
+</style>
+<style>
+        table {
+            text-align: center;
+            font-size: 11px;
+            font-family:Arial, Helvetica, sans-serif;
+            background: #c0c0c0;
+			margin:0px;
+			width:100%;
+			
+        }
+ 
+        table thead tr,
+        table tfoot tr {
+            background: #1eb273;
+			color:white;
+			padding:21px 3% 22px 0%;
+			border-top:1px solid #1eb273;
+			border-bottom:1px solid #1eb273;
+
+	
+        }
+ 
+        table tbody tr {
+            background: #f0f0f0;
+		
+        }
+ 
+        td, th {
+            border: 1px solid white;
+			padding:16px 0% 17px 0%;
+			color:black;
+        }
+		body {
+    background: url(css/images/bg1.png);
+    background-repeat:repeat-y;
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:100% 100%;
+}
+.ui-page {
+    background: transparent;
+}
+.ui-content{
+    background: transparent;
+}
+    </style>
+</head>
+<body onload="load()">
+
+	
+<div data-role="page" data-theme="a" id="home">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" style="height:10%;">
+			<img src="css/images/header1.png" style="margin-left: auto; margin-right: auto; display: block;" height="100%"width="100%"/>
+		</div>
+		
+	<div data-role="content" data-theme="a" align="center">
+	
+	<!---->
+		
+<div height="100%" width="100%" style="margin-top:-15px;">
+		<a href="#"><img src="css/images/trydesign.png" height="100%" width="100%"></a><br>
+	    <a href="#newsfeed"><img src="css/images/newsfeed.png" height="20%" width="30%"></a>
+	    <a href="#programs"><img src="css/images/programs.png" height="20%" width="30%"></a>
+		<a href="#admission"><img src="css/images/admission.png" height="20%" width="30%"></a>
+		<a href="#vmg"><img src="css/images/vmg.png" height="20%" width="30%"></a>
+		<a href="#portal"><img src="css/images/portal.png" height="20%" width="30%"></a>
+		<a href="#calendar"><img src="css/images/calendar.png" height="20%" width="30%"></a>
+	    <a href="#help"><img src="css/images/help.png" height="20%" width="30%"></a>
+		<a href="#history"><img src="css/images/history.png" height="20%" width="30%"></a>
+	    <a href="#about"><img src="css/images/about.png" height="20%" width="30%"></a>
+		<h3 style="color:white;"><i>All Rights Reserved &copy; || 2014</i></h3>
+	</div>
+	
+</div>
+</div>
+
+	<!--portal-->
+	<div data-role="page" data-theme="a" id="portal">
+	
+<div data-role="header" data-position="fixed" data-tap-toggle="false" style="height:10%;">
+			<img src="css/images/header1.png" style="margin-left: auto; margin-right: auto; display: block;" height="100%"width="100%"/>
+		</div>
+		<div data-role="content" data-theme="a" align="center">
+			<a href="#newsfeed"><img src="css/images/trydesign.png" height="100%" width="100%"></a><br><br>
+	    <a href="#studentportal"><img src="css/images/student.png" height="30%" width="40%"></a><br>
+	  <a href="#parentportal"><img src="css/images/parent.png" height="30%" width="40%"></a>
+	   <a href="#facultyportal"><img src="css/images/faculty.png" height="30%" width="40%"></a>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="a" data-toggle="false">
+	<div data-role="navbar">
+			<ul>
+			<li><a href="#home" data-theme="a"  style="background-color:#1067aa"><font size="2%">MENU</font></a></li>
+			</ul>
+	</div><!-- /navbar -->
+</div>
+</div>
+
+<div data-role="page" data-theme="a" id="studentportal">
+<div data-role="header" data-position="fixed" data-tap-toggle="false" style="height:10%;">
+			<img src="css/images/header1.png" style="margin-left: auto; margin-right: auto; display: block;" height="100%"width="100%"/>
+		</div>
+		<div data-role="content" data-theme="a" align="center">
+	
+			<a href="#newsfeed"><img src="css/images/student.png" height="50%" width="50%"></a><br><span class="login-error" style="color:red"></span>
+			<div class="ex" style="margin-top:20px;">
+						<div class="ui-btn ui-icon-user ui-btn-icon-left">
+						<input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Student Number" required  style="color:white;"/>
+						</div>
+						<div class="ui-btn ui-icon-lock ui-btn-icon-left">
+						<input type="password" class="form-control" name="pass" id="password" placeholder="Enter your Password"  style="color:white;" required />
+						</div>
+						<button id="login">LOGIN</button>
+						<a href="#home" data-role="button">HOME</a>
+						</div>
+			<div style="margin-top:60px;"><center>
+			<span style="color:white;"><i>&copy; | All Rights Reserved 2014</i></span>
+			</center>
+		</div>
+		
+						</div>
+</div>
+
+<div data-role="page" data-theme="a" id="parentportal">
+<div data-role="header" data-position="fixed" data-tap-toggle="false" style="height:10%;">
+			<img src="css/images/header1.png" style="margin-left: auto; margin-right: auto; display: block;" height="100%"width="100%"/>
+		</div>
+		<div data-role="content" data-theme="a" align="center">
+	
+			<a href="#newsfeed"><img src="css/images/parent.png" height="50%" width="50%"></a><br><span class="login-error" style="color:red"></span>
+			
+			<div class="ex" style="margin-top:20px;">
+						<div class="ui-btn ui-icon-user ui-btn-icon-left">
+						<input type="text" class="form-control" name="username" id="usernameparent"  placeholder="Enter your Username" required  style="color:white;"/>
+						</div>
+						<div class="ui-btn ui-icon-lock ui-btn-icon-left">
+						<input type="password" class="form-control" name="pass" id="passwordparent" placeholder="Enter your Password"  style="color:white;" required />
+						</div>
+						<button id="loginparent">LOGIN</button>
+						<a href="#home" data-role="button">HOME</a>
+						</div>
+			<div style="margin-top:60px;"><center>
+			<span style="color:white;"><i>&copy; | All Rights Reserved 2014</i></span>
+			</center>
+		</div>
+</div>
+</div>
+
+<div data-role="page" data-theme="a" id="enterstudent">
+<div data-role="header" data-position="fixed" data-tap-toggle="false" style="height:10%;">
+			<img src="css/images/header1.png" style="margin-left: auto; margin-right: auto; display: block;" height="100%"width="100%"/>
+		</div>
+		<div data-role="content" data-theme="a" align="center">
+	
+			<a href="#newsfeed"><img src="css/images/parent.png" height="50%" width="50%"></a><br><span class="login-error" style="color:red"></span>
+			<div class="ex" style="margin-top:20px;">
+						<div class="ui-btn ui-icon-user ui-btn-icon-left">
+						<input type="text" id="username1"  placeholder="Enter Student ID number" required  style="color:white;"/>
+						</div>
+						<div class="ui-btn ui-icon-lock ui-btn-icon-left">
+						<input type="text"  id="bdate" placeholder="Enter Birthdate ex.m-d-y(11-22-95)"  style="color:white;" required />
+						</div>
+						<button id="showStudent">OK</button>
+						<a id="#home" onClick="javascript:location.href='index.html';" data-role="button">HOME</a>
+			</div>
+			<div style="margin-top:60px;"><center>
+			<span style="color:white;"><i>&copy; | All Rights Reserved 2014</i></span>
+			</center>
+		</div>
+		
+						</div>
+</div>
+
+<div data-role="page" data-theme="a" id="studentSched">
+<div data-role="header" data-position="fixed" data-tap-toggle="false" style="height:10%;">
+			<img src="css/images/header1.png" style="margin-left: auto; margin-right: auto; display: block;" height="100%"width="100%"/>
+		</div>
+<div data-role="content" data-theme="a">
+		<div id="name2"></div>
+		<h3 style="color:white;">Schedules: </h3>
+		 <div id="showsched"></div>
+</div>
+
+<div data-role="footer" data-position="fixed" data-tap-toggle="false">		
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#grades" style="background-color:#1067aa;"><img src="css/images/gradesicon.png" height="50%" width="60%" /></a></li>
+			<li><a id="#"  style="background-color:#1067aa;"><img src="css/images/schedicon.png"  height="50%" width="60%"/></a></li>
+			<li><a class="out" style="background-color:#1067aa;"><img src="css/images/logouticon.png" height="50%" width="60%"/></a></li>
+		</ul>
+	</div><!-- /navbar -->
+</div>
+</div>
+</div>
+		
+		
+		
+<div data-role="page" data-theme="a" id="facultyportal">
+<div data-role="header" data-position="fixed" data-tap-toggle="false" style="height:10%;">
+			<img src="css/images/header1.png" style="margin-left: auto; margin-right: auto; display: block;" height="100%"width="100%"/>
+		</div>
+		<div data-role="content" data-theme="a" align="center">
+	
+			<a ><img src="css/images/faculty.png" height="50%" width="50%"></a><br><span class="login-error" style="color:red"></span>
+			<div class="ex" style="margin-top:20px;">
+						<div class="ui-btn ui-icon-user ui-btn-icon-left">
+						<input type="text" class="form-control" name="username" id="userfaculty"  placeholder="Enter your Email Address" required  style="color:white;"/>
+						</div>
+						<div class="ui-btn ui-icon-lock ui-btn-icon-left">
+						<input type="password" class="form-control" name="pass" id="passfaculty" placeholder="Enter your Password"  style="color:white;" required />
+						</div>
+						<button id="loginfaculty">LOGIN</button>
+						<a id="#home" onClick="javascript:location.href='index.html';" data-role="button">HOME</a>
+			</div>
+			<div style="margin-top:60px;"><center>
+			<span style="color:white;"><i>&copy; | All Rights Reserved 2014</i></span>
+			</center>
+		</div>
+	</div>
+</div>
+
+<div data-role="page" data-theme="a" id="facultyschedule">
+<div data-role="header" data-position="fixed" data-tap-toggle="false" style="height:10%;">
+			<img src="css/images/header1.png" style="margin-left: auto; margin-right: auto; display: block;" height="100%"width="100%"/>
+		</div>
+		<div data-role="content" data-theme="a" align="center">
+		<div id="showschedfaculty"></div>
+		<div data-role="footer" data-position="fixed" data-theme="a" style="height:5%" data-toggle="false">
+	<div data-role="navbar">
+			<ul>
+			<li><a class="out" data-theme="a"  style="background-color:#1067aa"><font size="2%">LOGOUT</font></a></li>
+			</ul>
+	</div><!-- /navbar -->
+</div>
+	</div>
+</div>
+
+	<!--about-->
+
+<div data-role="page" data-theme="a" id="about">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" style="height:10%;">
+			<img src="css/images/header1.png" style="margin-left: auto; margin-right: auto; display: block;" height="100%"width="100%"/>
+		</div>
+<div data-role="content" data-theme="a" align="center">
+<img src="css/images/trydesign.png" height="100%" width="100%" >
+<img src="css/images/about_2.png" height="100%" width="100%" style="margin-top:-20px;" />
+</div>
+ <div data-role="footer" data-position="fixed" data-theme="a" data-toggle="false">
+	<div data-role="navbar">
+			<ul>
+			<li><a href="#home" data-theme="a" style="background-color:#1067aa"><font size="2%">MENU</font></a></li>
+			<li><a href="#dev" data-theme="a"  style="background-color:#1067aa"><font size="2%">DEVELOPERS</font></a></li>
+			</ul>
+	</div><!-- /navbar -->
+</div>
+</div>
+
+<div data-role="page" data-theme="a" id="newsfeed">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" style="height:10%;">
+			<img src="css/images/header1.png" style="margin-left: auto; margin-right: auto; display: block;" height="100%"width="100%"/>
+		</div>
+<div data-role="content" data-theme="a" align="center">
+<div id="box3" style="width:100%;background-color:#1067aa;border: 5px #1067aa; height:30px;margin-top:5px">
+		<center><span style="color:white;font-size:20px;">UPDATES</span></center>
+		</div>
+		<div id="box" style="margin-top:-8px;">
+		<div id="updates" style="font:medium arial,sans-serif;font-family:'Roboto';margin-left:'-15px'">Unable to fetch updates. Please check your internet connection and try again.</div>
+		</div>
+</div>
+ <div data-role="footer" data-position="fixed" data-theme="a" data-toggle="false">
+	<div data-role="navbar">
+			<ul>
+			<li><a href="#home" data-theme="a" style="background-color:#1067aa" ><font size="2%">MENU</font></a></li>
+			</ul>
+	</div><!-- /navbar -->
+</div>
+</div>
+<!--admission-->
+<div data-role="page" data-theme="a" id="admission" >
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" style="height:10%;">
+			<img src="css/images/header1.png" style="margin-left: auto; margin-right: auto; display: block;" height="100%"width="100%"/>
+		</div>
+<div data-role="content" data-theme="a" align="center" style="color:white;">
+ 
+<img src="css/images/admission_1.png" height="100%" width="100%"/>
+
+</div>
+ <div data-role="footer" data-position="fixed" data-theme="a" data-tap-toggle="false">
+	<div data-role="navbar">
+			<ul>
+			<li><a data-theme="a" href="#home" style="background-color:#1067aa"><font size="2%">MENU</font></a></li>
+			<li><a href="#req" data-theme="a"  style="background-color:#1067aa"><font size="2%">REQUIREMENTS</font></a></li>
+			</ul>
+	</div>
+</div>
+</div>
+<!-- /req -->
+
+
+<div data-role="page" data-theme="a" id="req">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" style="height:10%;" >
+			<img src="css/images/header1.png" style="margin-left: auto; margin-right: auto; display: block;" height="100%"width="100%"/>
+		</div>
+<div data-role="content" data-theme="a" align="center" style="color:white;">
+
+<img src="css/images/admission_2.png" height="100%" width="100%"/>
+</div>
+ <div data-role="footer" data-position="fixed" data-theme="a" data-tap-toggle="false">
+	<div data-role="navbar">
+			<ul>
+			<li><a  data-theme="a" href="#home" style="background-color:#1067aa"><font size="2%">MENU</font></a></li>
+			<li><a href="#admission" data-theme="a"  style="background-color:#1067aa"><font size="2%">PROCEDURE</font></a></li>
+			</ul>
+	</div><!-- /navbar -->
+</div>
+</div>
+
+<!-- /help -->
+
+<div data-role="page" data-theme="a" id="help">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" style="height:10%;">
+			<img src="css/images/header1.png" style="margin-left: auto; margin-right: auto; display: block;" height="100%"width="100%"/>
+		</div>
+<div data-role="content" data-theme="a" align="center">
+<br>
+<img src="css/images/helpinfo.png" height="100%" width="100%">
+</div>
+ <div data-role="footer" data-position="fixed" data-theme="a" data-toggle="false">
+	<div data-role="navbar">
+			<ul>
+			<li><a href="#home" data-theme="a"  style="background-color:#1067aa"><font size="2%">MENU</font></a></li>
+			</ul>
+	</div><!-- /navbar -->
+</div>
+</div>
+
+<div data-role="page" data-theme="a" id="dev">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" style="height:10%;">
+			<img src="css/images/header1.png" style="margin-left: auto; margin-right: auto; display: block;" height="100%"width="100%"/>
+		</div>
+<div data-role="content" data-theme="a" align="center">
+<img src="css/images/devs.png" height="100%" width="100%">
+</div>
+ <div data-role="footer" data-position="fixed" data-theme="a" data-toggle="false">
+	<div data-role="navbar">
+			<ul>
+			<li><a href="#home" data-theme="a"  style="background-color:#1067aa"><font size="2%">MENU</font></a></li>
+			<li><a href="#about" data-theme="a"  style="background-color:#1067aa"><font size="2%">ABOUT</font></a></li>
+			</ul>
+	</div><!-- /navbar -->
+</div>
+</div>
+
+<!-- /history -->
+
+
+<div data-role="page" data-theme="a" id="history">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" style="height:10%;">
+			<img src="css/images/header1.png" style="margin-left: auto; margin-right: auto; display: block;" height="100%"width="100%"/>
+		</div>
+<div data-role="content" data-theme="a" align="center">
+  </br>
+<center><img src="css/images/gordoncollege.png" height="100%" width="100%"><br>
+<img src="css/images/history_1.png" height="100%" width="100%"><br>
+<img src="css/images/history_2.png" height="100%" width="100%">
+</center>
+</div>
+ <div data-role="footer" data-position="fixed" data-theme="a" data-toggle="false">
+	<div data-role="navbar">
+			<ul>
+			<li><a href="#home" data-theme="a"  style="background-color:#1067aa"><font size="2%">MENU</font></a></li>
+			</ul>
+	</div><!-- /navbar -->
+</div>
+</div>
+
+<!-- /history -->
+
+<div data-role="page" data-theme="a" id="programs">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" style="height:10%;">
+			<img src="css/images/header1.png" style="margin-left: auto; margin-right: auto; display: block;" height="100%"width="100%"/>
+		</div>
+<div data-role="content" data-theme="a" align="center">
+
+<img src="css/images/prog1.png" height="100%" width="100%">
+</div>
+ <div data-role="footer" data-position="fixed" data-theme="a" data-toggle="false">
+	<div data-role="navbar">
+			<ul>
+			<li><a href="#home" data-theme="a" style="background-color:#1067aa" ><font size="2%">MENU</font></a></li>
+			<li><a href="#" data-theme="a"  style="background-color:#1067aa"><font size="2%">BSN</font></a></li>
+			<li><a href="#gm" data-theme="a" style="background-color:#1067aa" ><font size="2%">GM</font></a></li>
+			</ul>
+	</div><!-- /navbar -->
+</div>
+</div>
+
+<div data-role="page" data-theme="a" id="gm">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" style="height:10%;">
+			<img src="css/images/header1.png" style="margin-left: auto; margin-right: auto; display: block;" height="100%"width="100%"/>
+		</div>
+<div data-role="content" data-theme="a" align="center">
+
+<img src="css/images/prog2.png" height="100%" width="100%">
+</div>
+ <div data-role="footer" data-position="fixed" data-theme="a" data-toggle="false">
+	<div data-role="navbar">
+			<ul>
+			<li><a href="#home" data-theme="a" style="background-color:#1067aa" ><font size="2%">MENU</font></a></li>
+			<li><a href="#programs" data-theme="a" style="background-color:#1067aa" ><font size="2%">BSN</font></a></li>
+			<li><a href="#" data-theme="a" style="background-color:#1067aa" ><font size="2%">GM</font></a></li>
+			</ul>
+	</div><!-- /navbar -->
+</div>
+</div>
+
+<!-- /vmg -->
+<div data-role="page" data-theme="a" id="vmg">
+		           <div data-role="header" data-theme="a"  align="center" data-position="fixed" style="height:10%;">
+				    <img src="css/images/header1.png" style="margin-left: auto; margin-right: auto; display: block;" height="100%"width="100%"/>
+ </div>
+  <div data-role="content" align="center" >
+ 
+<img src="css/images/vision.png" height="100%" width="100%">
+    
+</div>
+  
+	 
+	 <div data-role="footer" data-position="fixed" data-theme="a" data-toggle="false">
+	<div data-role="navbar">
+		<ul>
+		
+		<li><a href="#home" data-theme="a"style="background-color:#1067aa" ><font size="2%">MENU</font></a></li>
+		<li><a href="#" data-theme="a" style="background-color:#1067aa" ><font size="2%">VISION</font></a></li>
+		<li><a href="#m" data-theme="a" style="background-color:#1067aa" ><font size="2%">MISSION</font></a></li>
+		<li><a href="#g" data-theme="a" style="background-color:#1067aa" ><font size="2%">GOALS</font></a></li>
+			
+			</ul>
+	</div><!-- /navbar -->
+</div>
+  </div>
+  
+  <div data-role="page" data-theme="a" id="m">
+		           <div data-role="header" data-theme="a"  align="center" data-position="fixed" style="height:10%;">
+				   <img src="css/images/header1.png" style="margin-left: auto; margin-right: auto; display: block;" height="100%"width="100%"/>
+ </div>
+  <div data-role="content" align="center" >
+ 
+    
+<img src="css/images/mission.png" height="100%" width="100%">
+</div>
+  
+	 
+	 <div data-role="footer" data-position="fixed" data-theme="a" data-toggle="false">
+	<div data-role="navbar">
+		<ul>
+		
+			<li><a href="#home" data-theme="a"style="background-color:#1067aa"><font size="2%">MENU</font></a></li>
+		<li><a href="#vmg" data-theme="a"  style="background-color:#1067aa"><font size="2%">VISION</font></a></li>
+		
+		<li><a href="#" data-theme="a"  style="background-color:#1067aa"><font size="2%">MISSION</font></a></li>
+		
+		<li><a href="#g" data-theme="a" style="background-color:#1067aa" ><font size="2%">GOALS</font></a></li>
+			
+			</ul>
+	</div><!-- /navbar -->
+</div>
+  </div>
+  
+  <div data-role="page" data-theme="a" id="g">
+		           <div data-role="header" data-theme="a"  align="center" data-position="fixed" style="height:10%;">
+				   <img src="css/images/header1.png" style="margin-left: auto; margin-right: auto; display: block;" height="100%"width="100%"/>
+ </div>
+<div data-role="content" align="center" >
+     
+<img src="css/images/Objectives.png" height="100%" width="100%">
+<img src="css/images/Care.png" height="100%" width="100%">
+</div>
+  
+	 
+	 <div data-role="footer" data-position="fixed" data-theme="a" data-toggle="false">
+	<div data-role="navbar">
+		<ul>
+		<li><a href="#home" data-theme="a"style="background-color:#1067aa" ><font size="2%">MENU</font></a></li>
+		<li><a href="#vmg" data-theme="a"  style="background-color:#1067aa"><font size="2%">VISION</font></a></li>
+		<li><a href="#m" data-theme="a" style="background-color:#1067aa" ><font size="2%">MISSION</font></a></li>
+		<li><a href="#" data-theme="a" style="background-color:#1067aa" ><font size="2%">GOALS</font></a></li>
+		</ul>
+	</div>
+</div>
+  </div>
+  
+  <!-- /navbar -->
+  
+    <div data-role="page" data-theme="a" id="calendar">
+<div data-role="header" data-theme="a"  align="center" data-position="fixed" style="height:10%;">
+				   <img src="css/images/header1.png" style="margin-left: auto; margin-right: auto; display: block;" height="100%"width="100%"/>
+ </div>
+  <div data-role="content" align="center" >
+  <div data-role="content" data-theme="a" align="center"   style="color:white;">
+<p>ACADEMIC YEAR 2014-2015</p>
+	<div data-role="collapsible" data-theme="a" data-content-theme="a" data-iconpos="right" >
+    <h4><font face="Century Gothic">MAY</font></h4>
+    <p><font color="white" face="Century Gothic">MAY 5-31: Registration/Enrollment Period</font></p>
+</div>
+  <div data-role="collapsible" data-theme="a" data-content-theme="a" data-iconpos="right">
+    <h4><font face="Century Gothic">JUNE</font></h4>
+    <p ><font color="white" face="Century Gothic">JUNE 9: Start of Classes</font></p>
+	<p ><font color="white" face="Century Gothic">JUNE 10: General Student Orientation</font></p>
+	<p><font color="white" face="Century Gothic">JUNE 12: INDEPENDENCE DAY</font></p>
+	<p><font color="white" face="Century Gothic">JUNE 20: Last Day of Dropping of Subjects with Refund</font></p>
+</div>
+ <div data-role="collapsible" data-theme="a" data-content-theme="a" data-iconpos="right"> 
+ <h4><font face="Century Gothic">JULY</font></h4>
+  <p ><font color="white" face="Century Gothic">JULY 11: Last Day of Dropping of Subjects with Permission</font></p>
+	<p ><font color="white" face="Century Gothic">JULY 16-20: PRELIM EXAMINATIONS</font></p>
+	
+	
+</div>
+ <div data-role="collapsible" data-theme="a" data-content-theme="a" data-iconpos="right"> 
+   <h4><font face="Century Gothic">AUGUST</font></h4>	
+	<p><font color="white" face="Century Gothic">AUGUST 21: NINOY AQUINO DAY</font></p>
+	<p><font color="white" face="Century Gothic">AUGUST 25: NATIONAL HEROES DAY</font></p>
+	<p><font color="white" face="Century Gothic">AUGUST 26-31: MIDTERM EXAMINATIONS</font></p>
+
+</div>
+ <div data-role="collapsible" data-theme="a" data-content-theme="a" data-iconpos="right"> 
+ <h4><font face="Century Gothic">SEPTEMBER</font></h4>	
+	<p><font color="white" face="Century Gothic">SEPTEMBER 3-5: ANNUAL SPORTFEST</font></p>
+
+</div>
+ <div data-role="collapsible" data-theme="a" data-content-theme="a" data-iconpos="right"> 
+    <h4><font face="Century Gothic">OCTOBER</font></h4>	
+	<p><font color="white" face="Century Gothic">OCTOBER 6-12: FINAL EXAMINATIONS</font></p>
+	<p><font color="white" face="Century Gothic">OCTOBER 13: SEMESTRAL BREAK</font></p>
+	<p><font color="white" face="Century Gothic">OCTOBER 23-31: Registration/Enrollment Period</font></p>
+</div>
+ <div data-role="collapsible" data-theme="a" data-content-theme="a" data-iconpos="right"> 
+   <h4><font face="Century Gothic">NOVEMBER</font></h4>		 
+	<p><font color="white" face="Century Gothic">NOVEMBER 1: ALL SAINT'S DAY</font></p>
+	<p><font color="white" face="Century Gothic">NOVEMBER 3: START OF CLASSES</font></p>
+	<p><font color="white" face="Century Gothic">NOVEMBER 14: Last Day of Dropping of Subjects with Refund</font></p>
+	<!--<p><font color="white" face="Century Gothic">NOVEMBER 22: IT Olympiad (Actual)</font></p> -->
+	<p><font color="white" face="Century Gothic">NOVEMBER 30: BONIFACIO DAY</font></p>
+	<!--<p><font color="white" face="Century Gothic">NOVEMBER: HACKATHON</font></p>	-->
+</div>
+ <div data-role="collapsible" data-theme="a" data-content-theme="a" data-iconpos="right"> 
+    <h4><font face="Century Gothic">DECEMBER</font></h4>	
+	<p><font color="white" face="Century Gothic">DECEMBER 5: Last Day of Dropping of Subject with Permission</font></p>
+	<p><font color="white" face="Century Gothic">DECEMBER 13-17: Second Semester Prelim Examinations</font></p>
+	<p><font color="white" face="Century Gothic">DECEMBER 13- January 4: CHRISTMAS VACATION</font></p>
+	<p><font color="white" face="Century Gothic">DECEMBER 25: CHRISTMAS DAY</font></p>
+	<p><font color="white" face="Century Gothic">DECEMBER 30: RIZAL DAY/OLONGAPO CITY FIESTA</font></p>
+</div>
+ <div data-role="collapsible" data-theme="a" data-content-theme="a" data-iconpos="right"> 
+    <h4><font face="Century Gothic">JANUARY 2015</font></h4>	
+	<p><font color="white" face="Century Gothic">JANUARY 1: NEW YEAR</font></p>
+	<p><font color="white" face="Century Gothic">JANUARY 5: Classes Resume</font></p>
+<p><font color="white" face="Century Gothic">JANUARY 22: IT OLYMPIAD</font></p>
+	<p><font color="white" face="Century Gothic">JANUARY 29-30: SCITE 2015</font></p>
+</div>
+ <div data-role="collapsible" data-theme="a" data-content-theme="a" data-iconpos="right"> 
+    <h4><font face="Century Gothic">FEBRUARY 2015</font></h4>
+	<p><font color="white" face="Century Gothic">FEBRUARY 2-7: Second Semester Midterm Examinations</font></p>
+	<p><font color="white" face="Century Gothic">FEBRUARY 16-18: 16th Founding Anniversay Celebration</font></p>
+		<p><font color="white" face="Century Gothic">FEBRUARY 19: CHINESE NEW YEAR</font></p>
+</div>
+ <div data-role="collapsible" data-theme="a" data-content-theme="a" data-iconpos="right"> 
+   <h4><font face="Century Gothic">MARCH 2015</font></h4>   
+   <p><font color="white" face="Century Gothic">MARCH 9-14: Final Examination(Graduating Students)</font></p>
+	<p><font color="white" face="Century Gothic">MARCH 23-29: Final Examination (Non-graduating Students)</font></p>
+	<!--<p><font color="white" face="Century Gothic">MARCH: RECOGNITION</font></p>-->
+</div>
+ <div data-role="collapsible" data-theme="a" data-content-theme="a" data-iconpos="right"> 
+    <h4><font face="Century Gothic">APRIL 2015</font></h4>	
+	 <p><font color="white" face="Century Gothic">APRIL 6: COMMENCEMENT EXERCISES</font></p>
+	<p><font color="white" face="Century Gothic">APRIL 8-10: Registration/Enrollement Period for Summer Class</font></p>
+	<p><font color="white" face="Century Gothic">APRIL 9: ARAW NG KAGITINGAN</font></p>
+<p><font color="white" face="Century Gothic">APRIL 10: RECOGNITION DAY</font></p>
+	 <p><font color="white" face="Century Gothic">APRIL 13: Start of Summer Classes</font></p>
+	<p><font color="white" face="Century Gothic">APRIL 17: MAUNDY THURSDAY</font></p>
+	<p><font color="white" face="Century Gothic">APRIL 18: GOOD FRIDAY</font></p>
+</div>
+</div>
+</div>
+  
+	 
+	 <div data-role="footer" data-position="fixed" data-theme="a" data-toggle="false">
+	<div data-role="navbar">
+		<ul>
+		<li><a href="#home" data-theme="a"style="background-color:#1067aa" ><font size="2%">MENU</font></a></li>
+		</ul>
+	</div>
+</div>
+  </div>
+  <!--Student.grades-->
+<div data-role="page" data-theme="a" id="grades">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" style="20%">
+			<img src="css/images/header1.png" style="margin-left: auto; margin-right: auto; display: block;" height="100%"width="100%"/><br />
+			
+		</div>
+		
+		<div data-role="content" data-theme="a">
+		<!--<div style="margin-left:-15px;margin-top:-15px">
+	<table id="grid"></table>
+	</div>-->
+	<div id="name"></div>
+	<h3 style="color:white;">Grades: </h3>
+	<div data-role="collapsible-set" data-theme="a" data-content-theme="d" id="first1" style="display:none;">
+	<div data-role="collapsible" >
+	<h2>First Year First Semester</h2>
+	<ul data-role="listview" data-filter-theme="a" data-divider-theme="d">
+	<li>	
+	<center>
+	 <div id="show1"></div>
+	</center>
+	</li>
+	</ul>
+	</div>
+	</div>
+	
+	
+	<div data-role="collapsible-set" data-theme="a" data-content-theme="d" id="first2" style="display:none;">
+	<div data-role="collapsible">
+	<h2>First Year Second Semester</h2>
+	<ul data-role="listview" data-filter-theme="a" data-divider-theme="d">
+	<li>	
+	<center>
+	 <div id="show2"></div>
+	</center>
+	</li>
+	</ul>
+	</div>
+	</div>
+	
+	
+	<div data-role="collapsible-set" data-theme="a" data-content-theme="d" style="display:none;">
+	<div data-role="collapsible">
+	<h2>First Year Summer</h2>
+	<ul data-role="listview" data-filter-theme="a" data-divider-theme="d">
+	<li>	
+	<center>
+	 <div id="show"></div>
+	</center>
+	</li>
+	</ul>
+	</div>
+	</div>
+	
+	
+	<div data-role="collapsible-set" data-theme="a" data-content-theme="d" id="second" style="display:none;">
+	<div data-role="collapsible">
+	<h2>Second Year First Semester</h2>
+	<ul data-role="listview" data-filter-theme="a" data-divider-theme="d">
+	<li>	
+	<center>
+	 <div id="show3"></div>
+	</center>
+	</li>
+	</ul>
+	</div>
+	</div>
+	
+	
+	<div data-role="collapsible-set" data-theme="a" data-content-theme="d" id="second2" style="display:none;">
+	<div data-role="collapsible">
+	<h2>Second Year Second Semester</h2>
+	<ul data-role="listview" data-filter-theme="a" data-divider-theme="d">
+	<li>	
+	<center>
+	 <div id="show4"></div>
+	</center>
+	</li>
+	</ul>
+	</div>
+	</div>
+	
+	
+	<div data-role="collapsible-set" data-theme="a" data-content-theme="d" id="third" style="display:none;">
+	<div data-role="collapsible">
+	<h2>Third Year First Semester</h2>
+	<ul data-role="listview" data-filter-theme="a" data-divider-theme="d">
+	<li>	
+	<center>
+	 <div id="show5"></div>
+	</center>
+	</li>
+	</ul>
+	</div>
+	</div>
+	
+	<div data-role="collapsible-set" data-theme="a" data-content-theme="d" id="third2" style="display:none;">
+	<div data-role="collapsible">
+	<h2>Third Year Second Semester</h2>
+	<ul data-role="listview" data-filter-theme="a" data-divider-theme="d">
+	<li>	
+	<center>
+	 <div id="show6"></div>
+	</center>
+	</li>
+	</ul>
+	</div>
+	</div>
+	
+	<div data-role="collapsible-set" data-theme="a" data-content-theme="d" style="display:none;">
+	<div data-role="collapsible">
+	<h2>Third Year Summer Semester</h2>
+	<ul data-role="listview" data-filter-theme="a" data-divider-theme="d">
+	<li>	
+	<center>
+	 <div id="show"></div>
+	</center>
+	</li>
+	</ul>
+	</div>
+	</div>
+	
+	<div data-role="collapsible-set" data-theme="a" data-content-theme="d" id="fourth" style="display:none;">
+	<div data-role="collapsible">
+	<h2>Fourth Year First Semester</h2>
+	<ul data-role="listview" data-filter-theme="a" data-divider-theme="d">
+	<li>	
+	<center>
+	 <div id="show7"></div>
+	</center>
+	</li>
+	</ul>
+	</div>
+	</div>
+	
+	<div data-role="collapsible-set" data-theme="a" data-content-theme="d" id="fourth2" style="display:none;">
+	<div data-role="collapsible">
+	<h2>Fourth Year Second Semester</h2>
+	<ul data-role="listview" data-filter-theme="a" data-divider-theme="d">
+	<li>	
+	<center>
+	 <div id="show8"></div>
+	</center>
+	</li>
+	</ul>
+	</div>
+	</div>
+	</div>
+<div data-role="footer" data-position="fixed" data-tap-toggle="false">		
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#" style="background-color:#1067aa;"><img src="css/images/gradesicon.png" height="50%" width="60%"/></a></li>
+			<li><a id="gotosched"  style="background-color:#1067aa;"><img src="css/images/schedicon.png" height="50%" width="60%"/></a></li>
+			<li><a id="out2" style="background-color:#1067aa;"><img src="css/images/logouticon.png" height="50%" width="60%"/></a></li>
+		</ul>
+	</div><!-- /navbar -->
+</div>
+</div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.3.min.js"></script>
+<script type="text/javascript">
+var show;
+$(document).ready(function(){
+
+
+
+var getUser=window.localStorage.getItem("getUser");
+    $.post("http://gcccs.org/gccahs/studentmobile/phpfiles/sched.php",
+    {
+      student:getUser
+    },
+    function(data,status){
+	  show=data;
+    });
+  });
+
+function loadAjax(){
+document.getElementById("show1").innerHTML=show;
+}
+
+function load(){
+
+var xmlhttp;
+if(window.XMLHttpRequest){
+			xmlhttp = new XMLHttpRequest();
+		}else{
+			xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xmlhttp.onreadystatechange=function(){
+			if(xmlhttp.readyState==4 && xmlhttp.status==200){
+				document.getElementById("updates").innerHTML=xmlhttp.responseText;
+		}
+		}
+		xmlhttp.open("GET","http://gcccs.org/gccahs/studentmobile/phpfiles/updates.php", true);
+		xmlhttp.send();
+}
+
+$("#showRegister").click(function(){
+		$("#reg-form").slideToggle();
+		$("#login-form").hide();
+		$("#space").hide();
+		});
+		
+		$("#cancel").click(function(){
+		$("#login-form").slideToggle();
+		$("#reg-form").hide();
+		$("#space").show();
+		});
+		
+	
+		function onlyNumbers(evt) {var e = event || evt;var charCode = e.which || e.keyCode;if (charCode > 31 && (charCode < 48 || charCode > 57)){ return false;} return true;}
+$(function(){
+
+	$('div.loading').hide().ajaxStart(function(){ $(this).show();}).ajaxStop(function(){ $(this).hide();});
+	$('div.msgbox').hide();
+	$('div.overlay').hide();
+	function msgbox(a){
+		$('div.msgbox').fadeIn(250);
+		$('div.msg').html(a);
+		$('div.mok').click(function(){
+			$('div.overlay').fadeOut(100);
+			$('div.msgbox').fadeOut(250);
+		});
+	}
+
+	$('#username').keypress(function(){ return onlyNumbers() });
+	$('#reg-username').keypress(function(){ return onlyNumbers() });
+	
+	$('#login').click(function(){
+		$.mobile.loading('show');
+		$.ajax({
+			url:"http://gcccs.org/gccahs/studentmobile/phpfiles/login.php",
+			data:{
+				username:$('#username').val(),
+				password:$('#password').val()
+			},
+			success:function(i){
+				if($('#username').val()==""){
+					$('.login-error').html('Please enter your username.');	
+				$.mobile.loading('hide');
+				}else if($('#password').val()==""){
+					$('.login-error').html('Please enter your password.');
+				$.mobile.loading('hide');
+				}else if(i==1){	
+				$('#password').val("");
+				var getUser=$('#username').val();
+				window.localStorage.setItem("getUser",getUser);
+				window.location.href="#grades";
+
+				
+				var name;
+
+var getUser=window.localStorage.getItem("getUser");
+    $.post("http://gcccs.org/gccahs/studentmobile/phpfiles/name.php",
+    {
+      student:getUser
+    },
+    function(data,status){
+	  name=data;
+	  	document.getElementById("name").innerHTML=name;
+	  	document.getElementById("name2").innerHTML=name;
+if($("#sem").html()=="First Semester" && $("#year").html()=="1st Year College"){
+$("#first1").show();
+}else if($("#sem").html()=="Second Semester" && $("#year").html()=="1st Year College"){
+$("#first1").show();
+$("#first2").show();
+}else if($("#sem").html()=="First Semester" && $("#year").html()=="2nd Year College"){
+$("#first1").show();
+$("#first2").show();
+$("#second").show();
+}else if($("#sem").html()=="Second Semester" && $("#year").html()=="2nd Year College"){
+$("#first1").show();
+$("#first2").show();
+$("#second").show();
+$("#second2").show();
+}else if($("#sem").html()=="First Semester" && $("#year").html()=="3rd Year College"){
+$("#first1").show();
+$("#first2").show();
+$("#second").show();
+$("#second2").show();
+$("#third").show();
+}else if($("#sem").html()=="Second Semester" && $("#year").html()=="3rd Year College"){
+$("#first1").show();
+$("#first2").show();
+$("#second").show();
+$("#second2").show();
+$("#third").show();
+$("#third2").show();
+}else if($("#sem").html()=="First Semester" && $("#year").html()=="4th Year College"){
+$("#first1").show();
+$("#first2").show();
+$("#second").show();
+$("#second2").show();
+$("#third").show();
+$("#third2").show();
+$("#fourth").show();
+}else if($("#sem").html()=="Second Semester" && $("#year").html()=="4th Year College"){
+$("#first1").show();
+$("#first2").show();
+$("#second").show();
+$("#second2").show();
+$("#third").show();
+$("#third2").show();
+$("#fourth").show();
+$("#fourth2").show();
+}else{
+
+}
+    });
+				
+var show;
+
+var getUser=window.localStorage.getItem("getUser");
+    $.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view.php",
+    {
+      student:getUser
+    },
+    function(data,status){
+	  show=data;
+	  	document.getElementById("show1").innerHTML=show;
+	
+    });
+	//
+	$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_2.php",
+    {
+      student:getUser
+    },
+    function(data,status){
+	  show=data;
+	  	document.getElementById("show2").innerHTML=show;
+		
+    });
+	
+	$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_3.php",
+    {
+      student:getUser
+    },
+    function(data,status){
+	  show=data;
+	  	document.getElementById("show3").innerHTML=show;
+
+    });
+	
+	$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_4.php",
+    {
+      student:getUser
+    },
+    function(data,status){
+	  show=data;
+	  	document.getElementById("show4").innerHTML=show;
+		
+    });
+	
+	$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_5.php",
+    {
+      student:getUser
+    },
+    function(data,status){
+	  show=data;
+	  	document.getElementById("show5").innerHTML=show;
+		
+    });
+	
+	$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_6.php",
+    {
+      student:getUser
+    },
+    function(data,status){
+	  show=data;
+	  	document.getElementById("show6").innerHTML=show;
+		
+    });
+	
+	$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_7.php",
+    {
+      student:getUser
+    },
+    function(data,status){
+	  show=data;
+	  	document.getElementById("show7").innerHTML=show;
+			
+    });
+	
+	$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_8.php",
+    {
+      student:getUser
+    },
+    function(data,status){
+	  show=data;
+	  	document.getElementById("show8").innerHTML=show;
+		
+    });
+	
+	
+  
+
+				
+				$('.login-error').html('');	
+				$.mobile.loading('hide');
+				}else if(i==2){
+					$('.login-error').html('The password you entered is incorrect.');
+					$.mobile.loading('hide');
+				}else{
+					$('.login-error').html('Invalid login.');
+					$.mobile.loading('hide');
+				}
+			}
+		});
+	});
+	
+
+});
+
+$("#logout").click(function(){
+window.localStorage.removeItem("getUser");
+window.localStorage.removeItem("id");
+window.location.href="#home"
+});
+
+$('#loginparent').click(function(){
+
+	$.mobile.loading('show');
+		$.ajax({
+			url:"http://gcccs.org/gccahs/studentmobile/phpfiles/loginParent.php",
+			data:{
+				username:$('#usernameparent').val(),
+				password:$('#passwordparent').val()
+			},
+			success:function(i){
+				if($('#usernameparent').val()==""){
+				$('.login-error').html('Please enter your username.');	
+				$.mobile.loading('hide');
+				}else if($("#passwordparent").val()==""){
+				$('.login-error').html('Please enter your password.');	
+				$.mobile.loading('hide');
+				}else if(i==1){
+				window.location.href="#enterstudent";
+				
+				$('.login-error').html('');	
+				$.mobile.loading('hide');
+				}else{
+					alert("invalid login");
+					$.mobile.loading('hide');
+				}
+			}
+		});
+	});
+	
+	$('#showStudent').click(function(){
+	
+	$.mobile.loading('show');
+		$.ajax({
+			url:"http://gcccs.org/gccahs/studentmobile/phpfiles/loginstudent.php",
+			data:{
+				username:$('#username1').val(),
+				bdate:$('#bdate').val(),
+			},
+			success:function(i){
+				if($('#username1').val()==""){
+				$('.login-error').html('Please enter your Student ID Number.');	
+				$.mobile.loading('hide');
+				}else if($('#bdate').val()==""){
+				$('.login-error').html('Please enter Student Birthdate.');	
+				$.mobile.loading('hide');
+				}else if(i==1){
+				
+				var id=$('#username1').val();
+				window.localStorage.setItem("getUser",id);
+				
+				var getUser=window.localStorage.getItem("getUser");
+    $.post("http://gcccs.org/gccahs/studentmobile/phpfiles/name.php",
+    {
+      student:getUser
+    },
+    function(data,status){
+	  name=data;
+	  
+	  	document.getElementById("name").innerHTML=name;
+	  	document.getElementById("name2").innerHTML=name;
+if($("#sem").html()=="First Semester" && $("#year").html()=="1st Year College"){
+$("#first1").show();
+}else if($("#sem").html()=="Second Semester" && $("#year").html()=="1st Year College"){
+$("#first1").show();
+$("#first2").show();
+}else if($("#sem").html()=="First Semester" && $("#year").html()=="2nd Year College"){
+$("#first1").show();
+$("#first2").show();
+$("#second").show();
+}else if($("#sem").html()=="Second Semester" && $("#year").html()=="2nd Year College"){
+$("#first1").show();
+$("#first2").show();
+$("#second").show();
+$("#second2").show();
+}else if($("#sem").html()=="First Semester" && $("#year").html()=="3rd Year College"){
+$("#first1").show();
+$("#first2").show();
+$("#second").show();
+$("#second2").show();
+$("#third").show();
+}else if($("#sem").html()=="Second Semester" && $("#year").html()=="3rd Year College"){
+$("#first1").show();
+$("#first2").show();
+$("#second").show();
+$("#second2").show();
+$("#third").show();
+$("#third2").show();
+}else if($("#sem").html()=="First Semester" && $("#year").html()=="4th Year College"){
+$("#first1").show();
+$("#first2").show();
+$("#second").show();
+$("#second2").show();
+$("#third").show();
+$("#third2").show();
+$("#fourth").show();
+}else if($("#sem").html()=="Second Semester" && $("#year").html()=="4th Year College"){
+$("#first1").show();
+$("#first2").show();
+$("#second").show();
+$("#second2").show();
+$("#third").show();
+$("#third2").show();
+$("#fourth").show();
+$("#fourth2").show();
+}else{
+
+}
+    });
+	
+				
+				var show1;
+				var getUser=window.localStorage.getItem("getUser");
+				$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view.php",
+				{
+				student:getUser
+				},
+				function(data,status){
+				show1=data;
+				document.getElementById("show1").innerHTML=show1;
+				});
+				
+				$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_2.php",
+				{
+				student:getUser
+				},
+				function(data,status){
+				show1=data;
+				document.getElementById("show2").innerHTML=show1;
+				});
+				
+				$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_3.php",
+				{
+				student:getUser
+				},
+				function(data,status){
+				show1=data;
+				document.getElementById("show3").innerHTML=show1;
+				});
+				
+				$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_4.php",
+				{
+				student:getUser
+				},
+				function(data,status){
+				show1=data;
+				document.getElementById("show4").innerHTML=show1;
+				});
+				
+				$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_5.php",
+				{
+				student:getUser
+				},
+				function(data,status){
+				show1=data;
+				document.getElementById("show5").innerHTML=show1;
+				});
+				
+				$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_6.php",
+				{
+				student:getUser
+				},
+				function(data,status){
+				show1=data;
+				document.getElementById("show6").innerHTML=show1;
+				});
+				
+				$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_7.php",
+				{
+				student:getUser
+				},
+				function(data,status){
+				show1=data;
+				document.getElementById("show7").innerHTML=show1;
+				});
+				
+				$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/view_8.php",
+				{
+				student:getUser
+				},
+				function(data,status){
+				show1=data;
+				document.getElementById("show8").innerHTML=show1;
+				});
+				
+				window.location.href="#grades";
+				
+				$('.login-error').html('');	
+				$.mobile.loading('hide');
+				}else{
+					alert('Invalid login.');
+					$.mobile.loading('hide');
+				}
+			}
+		});
+	});
+	
+	$("#studentschedule").click(function(){
+	var show2;
+	var getUser=window.localStorage.getItem("getUser");
+    $.post("http://gcccs.org/gccahs/studentmobile/phpfiles/sched.php",
+    {
+      student:getUser
+    },
+    function(data,status){
+	show2=data;
+	document.getElementById("showsched").innerHTML=show2;
+	window.location.href="#studentSched";
+    });
+	});
+	
+	$("#gotosched").click(function(){
+	var show2;
+	var getUser=window.localStorage.getItem("getUser");
+    $.post("http://gcccs.org/gccahs/studentmobile/phpfiles/sched.php",
+    {
+      student:getUser
+    },
+    function(data,status){
+	show2=data;
+	document.getElementById("showsched").innerHTML=show2;
+	window.location.href="#studentSched";
+    });
+	});
+	//logout;
+	$(".out").click(function(){
+	$.mobile.loading('show');
+	window.localStorage.removeItem("id");
+	window.location.href="#home";
+	$('#passwordparent').val("");
+	$('#usernameparent').val("");
+	$('#bdate').val("");
+	$('#username1').val("");
+	$.mobile.loading('hide');
+	});
+	$("#out2").click(function(){
+	$.mobile.loading('show');
+	window.localStorage.removeItem("getUser");
+	window.location.href="#home";
+	$.mobile.loading('hide');
+	$('#bdate').val("");
+	$('#username1').val("");
+	$('#passwordparent').val("");
+	$('#usernameparent').val("");
+	});
+	
+	$('#loginfaculty').click(function(){
+				if($('#userfaculty').val()==""){
+					$('.login-error').html('Please enter your Username.');
+				}else if($('#passfaculty').val()==""){
+					$('.login-error').html('Please enter your Password.');
+				}else{
+					$.ajax({
+						url:"http://gcccs.org/gccahs/studentmobile/phpfiles/loginfaculty.php",
+						data:{
+						username:$('#userfaculty').val(),
+						password:$('#passfaculty').val(),
+						},
+						success:function(i){
+							if(i==1){
+								var facultyID=$('#userfaculty').val();
+								window.localStorage.setItem("facultyID",facultyID);
+								var getUserfaculty=window.localStorage.getItem("facultyID");
+								var show4;
+								$.post("http://gcccs.org/gccahs/studentmobile/phpfiles/schedfaculty.php",
+									{
+									username:getUserfaculty
+									},
+							function(data,status){
+								$('#userfaculty').val("");
+								$('#passfaculty').val("");
+								show4=data;
+								document.getElementById("showschedfaculty").innerHTML=show4;
+								window.location.href='#facultyschedule';
+							});
+								
+							}else if(i==2) {
+								alert('Account is not yet verified. Please check your e-mail to confirm your account.');
+							}else if(i==3) {
+								alert('Incorrect password.');
+							}
+						}
+					});
+				}
+			});
+</script>
+</body>
+</html>
